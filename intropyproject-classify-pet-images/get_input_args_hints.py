@@ -47,7 +47,7 @@ def get_input_args():
     # Creates 3 command line arguments args.dir for path to images files,
     # args.arch which CNN model to use for classification, args.labels path to
     # text file with names of dogs.
-    parser.add_argument('--dir', type=str, default='pet_images/', 
+    parser.add_argument('--petimagesdir', type=str, default='pet_images/', 
                         help='path to folder of images')
     # TODO: 1a. EDIT parse.add_argument statements BELOW to add type & help for:
     #          --arch - the CNN model architecture

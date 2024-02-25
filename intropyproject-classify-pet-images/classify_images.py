@@ -29,7 +29,7 @@ from classifier import classifier
 #       results_dic dictionary that is passed into the function is a mutable 
 #       data type so no return is needed.
 # 
-def classify_images(images_dir, results_dic, model):
+def classify_images(pet_images_dir, results_dic, model):
     """
     Creates classifier labels with classifier function, compares pet labels to 
     the classifier labels, and adds the classifier label and the comparison of 
@@ -50,7 +50,7 @@ def classify_images(images_dir, results_dic, model):
      in test_classifier.py Please refer to this program prior to using the 
      classifier() function to classify images within this function 
      Parameters: 
-      images_dir - The (full) path to the folder of images that are to be
+      pet_images_dir - The (full) path to the folder of images that are to be
                    classified by the classifier function (string)
       results_dic - Results Dictionary with 'key' as image filename and 'value'
                     as a List. Where the list will contain the following items: 
@@ -67,7 +67,7 @@ def classify_images(images_dir, results_dic, model):
     """
     for key in results_dic:
         
-        images = images_dir + '/' + key
+        images = pet_images_dir + '/' + key
         
         model_label = classifier(images, model)
 
