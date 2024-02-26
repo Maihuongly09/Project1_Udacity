@@ -42,7 +42,7 @@ def get_input_args():
     # you created with this function 
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('--petimagesdir', type= str, default = 'pet_images', help = 'path to the folder of pet images')
+    parser.add_argument('--dir', type= str, default = 'pet_images', help = 'path to the folder of pet images')
     
     parser.add_argument('--arch', type = str, default = 'vgg', help = 'Enter the CNN Model Architecture supported (vgg, resnet, alexnet)', choices=['vgg', 'alexnet', 'resnet'])
     
